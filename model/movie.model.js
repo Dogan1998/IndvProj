@@ -8,13 +8,13 @@ const MovieSchema = new Schema({
   imagePath: String
 });
 
-//const Movie = mongoose.model('movie', MovieSchema);
+// const Movie = mongoose.model('movie', MovieSchema);
 
-// const movie = new Movie({
-//   name: 'Justice League',
-//   genre: 'Action',
-//   duration: '1:11:00',
-//   imagePath: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Justice_League_2017_film_logo.jpg',
-// }).save();
+//  const movie = new Movie({
+//    name: 'Justice',
+//    genre: 'Action',
+//    duration: '1:11:00',
+//    imagePath: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Justice_League_2017_film_logo.jpg',
+//  }).save();
 
 module.exports = MovieSchema;

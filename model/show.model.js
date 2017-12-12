@@ -11,27 +11,27 @@ const ShowSchema = new Schema({
   room: RoomSchema
 });
 
-// ShowSchema.pre('remove', function(next) {
-//   const Movie = mongoose.model('movie');
+//  ShowSchema.pre('remove', function(next) {
+//    const Movie = mongoose.model('movie');
 
-//   Movie.remove({ _id: { $in: this.movie } })
-//     .then(() => next());
+//    Movie.remove({ _id: { $in: this.movie } })
+//      .then(() => next());
 
-//   const Room = mongoose.model('room');
+//    const Room = mongoose.model('room');
 
-//   Room.remove({ id: { $in: this.room } })
-//     .then(() => next());
+//    Room.remove({ id: { $in: this.room } })
+//      .then(() => next());
 
-// });
+//  });
 
 const Show = mongoose.model('show', ShowSchema);
 
- const show = new Show({
-   time: '12:00',
-   movie:( { name: 'film', genre: 'geen', imagePath: 'geen', duration: '0:00:00'}),
-   room:({roomname: 'geen', seats: 5})
+  // const show = new Show({
+  //   time: '12:00',
+  //   movie:( { name: 'justice league', genre: 'actie', imagePath: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Justice_League_2017_film_logo.jpg', duration: '01:00:00'}),
+  //   room:({roomname: 'room 5', seats: 5})
    
    
- }).save();
+  // }).save();
 
-module.exports = ShowSchema;
+module.exports = Show;
