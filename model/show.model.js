@@ -26,12 +26,12 @@ const ShowSchema = new Schema({
 
 const Show = mongoose.model('show', ShowSchema);
 
-  // const show = new Show({
-  //   time: '12:00',
-  //   movie:( { name: 'justice league', genre: 'actie', imagePath: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Justice_League_2017_film_logo.jpg', duration: '01:00:00'}),
-  //   room:({roomname: 'room 5', seats: 5})
+   const show = new Show({
+     time: '12:00',
+     movie:( { name: 'justice league', genre: 'actie', imagePath: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Justice_League_2017_film_logo.jpg', duration: '01:00:00'}),
+     room:({roomname: 'room 5', seats: 5})
    
    
-  // }).save();
+   }).save();
 
 module.exports = Show;
